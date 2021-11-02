@@ -17,8 +17,8 @@ from django.urls import path
 from .views import home, calculatorOneView, calculatorTwoView, calculatorThreeView
 
 urlpatterns = [
-    path('', home),
-    path('calculator/1/', calculatorOneView),
-    path('calculator/2/', calculatorTwoView),
-    path('calculator/3/', calculatorThreeView),
+    path('', home, name="home"),
+    path('calculator/1/', calculatorOneView, name="calc1"),
+    path('calculator/2/', calculatorTwoView, name="calc2"),
+    # path('calculator/3/', calculatorThreeView),
 ]
